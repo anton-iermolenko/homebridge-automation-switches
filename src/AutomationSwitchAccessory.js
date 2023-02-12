@@ -144,7 +144,7 @@ class SwitchAccessory {
   _startTimer() {
     const delay = this._state.period * 1000;
 
-    this.log(`Starting timer for ${delay}ms`);
+    this.log.debug(`Starting timer for ${delay}ms`);
     this._timer = setTimeout(this._onTimeout.bind(this), delay);
   }
 
